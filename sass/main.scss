@@ -1,0 +1,58 @@
+/* Variáveis */
+
+$card-bg: #fd245a;
+$text-color: #bffcf9;
+
+body {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    background-image: url(/svgs/Wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15em auto;
+    padding: 9px;
+}
+.card {
+    border-radius: 3px;
+    text-align: center;
+    margin: 25px;
+    background: #292828;
+    color: #fd245a;
+    border:2px solid #fff;
+    width: 80px;
+    padding: 8px;
+    height: 80px;
+    transition: all .08s ease;
+    cursor: pointer;
+        &:active {
+            transform: scale(2.2);
+            cursor:none;
+            
+        }
+    span {
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+    }
+    kbd {
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+.playing {
+    transform: rotate(2, 2);
+    transform: scale(1.1);
+    border-color: #bffcf9;
+    box-shadow: 0 0 5px 5px #9C4A9C;
+    transform: rotate3d(1, 2.0, 3.0, 10deg)
+}
